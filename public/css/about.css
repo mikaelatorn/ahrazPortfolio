@@ -1,0 +1,100 @@
+#about .banner {
+    width: 3em;
+}
+
+.radial-progress {
+    background-color: #232323;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.mask,
+.fill {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border-radius: 50%;
+    transition: -webkit-transform 2s;
+    transition: -ms-transform 2s;
+    transition: transform 2s;
+    -webkit-backface-visibility: hidden;
+}
+
+.fill {
+    clip: rect(0px, 50px, 100px, 0px);
+}
+
+#c1 .fill {
+    background-color: #86DBDA;
+}
+
+#c2 .fill {
+    background-color: #7DB4D1;
+}
+
+#c3 .fill {
+    background-color: #3488b2;
+}
+
+#c4 .fill {
+    background-color: #828CD1;
+}
+
+#c5 .fill {
+    background-color: #A976B8;
+}
+
+#c6 .fill {
+    background-color: #D86F91;
+}
+
+.mask {
+    clip: rect(0px, 100px, 100px, 50px);
+}
+
+.shadow {
+    box-shadow: inset 6px 6px 10px rgba(0, 0, 0, 0.2);
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.inset {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 10px;
+    background-color: #232323;
+    border-radius: 50%;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.inset h3 {
+    line-height: 80px;
+    margin: 0;
+}
+
+.skill-container {
+    width: 45%;
+    /*float: left;*/
+    display: inline-block;
+}
+
+#skills {
+    padding: 2em 2em;
+}
+
+#line-margin {
+    margin-top: 5em;
+}
+
+.project {
+    margin: 4em 0;
+    background: #232323;
+    box-shadow: 0px 4px 7px #0d0d0d;
+    padding: 0 0 3em 0;
+}

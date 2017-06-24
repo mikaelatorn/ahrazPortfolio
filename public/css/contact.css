@@ -1,0 +1,17 @@
+/*#contact {
+    background: #232323;
+}
+
+#contact .banner {
+    width: 3em;
+}*/
+
+.contact-info ul {
+    list-style-type: none;
+    float: none;
+}
+
+.contact-info li {
+    width: 30%;
+    margin: auto;
+}

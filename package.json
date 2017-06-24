@@ -1,0 +1,22 @@
+{
+    "name": "ahraz",
+    "version": "1.0.0",
+    "description": "ahraz portfolio",
+    "main": "index.js",
+    "dependencies": {
+        "aos": "^2.1.1",
+        "body-parser": "^1.16.1",
+        "consolidate": "^0.14.5",
+        "cookie-parser": "^1.4.3",
+        "express": "^4.14.1",
+        "jquery": "^3.2.1",
+        "mustache": "^2.3.0",
+        "nodemon": "^1.11.0"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "mikaela tornlund",
+    "license": "ISC"
+}

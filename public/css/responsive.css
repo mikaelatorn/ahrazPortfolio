@@ -1,0 +1,203 @@
+@media screen and (min-width: 480px) {
+    #main-content {
+        width: 50%;
+        margin: auto;
+    }
+    #project-portfolio {
+        padding: 2em;
+    }
+    .contact-info li {
+        width: 33%;
+        padding: 1.5em 0;
+    }
+    .contact-info ul {
+        margin: 0 auto;
+    }
+    .skill-container {
+        width: 40%;
+        /*float: left;*/
+        display: inline-block;
+    }
+    .project {
+        padding: 3em;
+    }
+}
+
+
+/*ADD cards background and shadow*/
+
+@media screen and (min-width: 700px) {
+    #project-portfolio {
+        padding: 0 7em;
+    }
+    .radial-progress {
+        width: 120px;
+        height: 120px;
+    }
+    .mask,
+    .fill {
+        width: 120px;
+        height: 120px;
+    }
+    .fill {
+        clip: rect(0px, 60px, 120px, 0px);
+    }
+    .mask {
+        clip: rect(0px, 120px, 120px, 60px);
+    }
+    .shadow {
+        width: 120px;
+        height: 120px;
+    }
+    .inset h3 {
+        line-height: 90px;
+    }
+    .inset {
+        margin-left: 15px;
+        margin-top: 15px;
+        width: 90px;
+        height: 90px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    aside {
+        /*width: 30%;*/
+        width: 16em;
+        margin-left: 2em;
+        height: 100vh;
+        border-bottom: 0;
+        border-top: 0;
+        float: left;
+        box-shadow: 3px 0px 5px #1d1d1d;
+        position: fixed;
+        display: block;
+    }
+    body {
+        background-image: url('../images/chip-01.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    h1 {
+        font-size: 2.5em;
+        display: inline-block;
+    }
+    header {
+        z-index: 10;
+        margin-left: 6.2em;
+        width: initial;
+        background-color: transparent;
+    }
+    #menu-wrapper {
+        position: relative;
+        top: 45%;
+        transform: translateY(-50%);
+        height: 60%;
+    }
+    #menu-list {
+        height: 100vh;
+        width: 16em;
+        margin-top: 0;
+    }
+    .menu {
+        display: none;
+    }
+    .sidebar {
+        height: 15vh;
+        border-top: 2px solid #262626;
+    }
+    a {
+        line-height: 15vh;
+        margin-left: 1.5em;
+    }
+    #content {
+        display: inline-flex;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+        padding: 9em 4em 0 22em;
+    }
+    #project-portfolio {
+        display: inline-flex;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+        padding: 0 4em 0 22em;
+        justify-content: space-around;
+    }
+    #contact-content {
+        padding: 0 4em 0 22em;
+    }
+    .textbox {
+        width: 100%;
+    }
+    #main-content {
+        width: 65%;
+        height: 35em;
+        margin: 0 auto;
+    }
+    .skill-container {
+        width: 49%;
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .skill-container {
+        width: 32%;
+        display: inline-block;
+    }
+    #project-portfolio {
+        padding: 0 12em 0 30em;
+    }
+}
+
+@media screen and (min-width: 1360px) {
+    #main-content {
+        width: 50%;
+    }
+    .textbox {
+        width: 50%;
+        /*padding-top: 2em;*/
+    }
+    #skills {
+        margin: 2em auto;
+    }
+    .project {
+        width: 45%;
+    }
+    #project-portfolio {
+        padding: 0 5em 0 23em;
+    }
+}
+
+@media screen and (min-width: 1450px) {
+    #main-content {
+        width: 40%;
+        margin-left: 10%;
+        height: 30em;
+    }
+    .skill-container {
+        width: 15%;
+        display: inline-block;
+    }
+    #skills {
+        padding: 0 2em;
+        width: 100%;
+        margin-top: 0;
+    }
+    #skills h2 {
+        text-align: left;
+        margin-bottom: 1em;
+    }
+    #content {
+        padding-top: 8em;
+    }
+    #line-margin {
+        margin-top: 5em;
+    }
+}
+
+@media screen and (min-width: 1670px) {
+    #content {
+        padding-top: 8.1em;
+    }
+}

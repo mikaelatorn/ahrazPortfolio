@@ -1,0 +1,306 @@
+ /*Maybe change to 33338 color*/
+ 
+ * {
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+ }
+ 
+ body {
+     text-align: center;
+     background-color: #262626;
+     background-image: url('../images/chip-01.png');
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+ }
+ 
+ @font-face {
+     src: url(fonts/UbuntuMono-Bold.ttf);
+     font-family: mainFont;
+ }
+ 
+ @font-face {
+     src: url(fonts/UbuntuMono-Regular.ttf);
+     font-family: secondaryFont;
+ }
+ 
+ @font-face {
+     src: url(fonts/OpenSans-Regular.ttf);
+     font-family: paragraphText;
+ }
+ 
+ h2 {
+     text-align: left;
+     font-family: secondaryFont;
+ }
+ 
+ h3 {
+     font-family: paragraphText;
+ }
+ 
+ p {
+     text-align: left;
+ }
+ 
+ a {
+     font-size: 1.2em;
+     color: #d9d9d9;
+     display: inline-block;
+     margin-left: 2.5em;
+     line-height: 6em;
+     font-family: secondaryFont;
+     text-decoration: none;
+ }
+ 
+ header {
+     width: 100%;
+     position: fixed;
+     background-color: #262626;
+     z-index: 1;
+ }
+ 
+ hr {
+     margin: 0;
+     border: none;
+     height: 1px;
+     color: #d9d9d9;
+     background-color: #4d4d4d;
+     width: 100%;
+ }
+ 
+ .short-hr {
+     width: 60%;
+     animation: short-line 2s;
+     /*margin-bottom: 2em;*/
+     float: right;
+     margin-right: 40%;
+ }
+ 
+ .long-hr {
+     animation: line 2s;
+ }
+ 
+ @keyframes line {
+     0% {
+         width: 0%;
+     }
+     100% {
+         width: 100%;
+     }
+ }
+ 
+ @keyframes short-line {
+     0% {
+         width: 0%;
+     }
+     100% {
+         width: 60%;
+     }
+ }
+ 
+ #content {
+     padding-top: 7em;
+ }
+ /* ANIMATED HEADER */
+ 
+ h1 {
+     margin: 1em auto;
+     font-size: 2.2em;
+     font-family: mainFont;
+     color: #d9d9d9;
+     white-space: nowrap;
+     overflow: hidden;
+     width: 3em;
+     animation: type 1s steps(6, end);
+     display: inline-block;
+ }
+ 
+ span {
+     animation: blink 1s 4;
+     color: #d9d9d9;
+     display: inline-block;
+ }
+ 
+ @keyframes type {
+     from {
+         width: 0;
+     }
+     to {
+         width: 3em;
+     }
+ }
+ 
+ @keyframes blink {
+     to {
+         opacity: .0;
+     }
+ }
+ /*MENU*/
+ 
+ .menu {
+     position: fixed;
+     right: 2em;
+     top: 2.1em;
+     cursor: pointer;
+     z-index: 1;
+ }
+ 
+ .bar1,
+ .bar2,
+ .bar3 {
+     height: .3em;
+     margin-top: .4em;
+     width: 2.5em;
+     background-color: #d9d9d9;
+     transition: 0.4s;
+     border-radius: 1px;
+ }
+ 
+ .change .bar1 {
+     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+     transform: rotate(-45deg) translate(-9px, 6px);
+ }
+ 
+ .change .bar2 {
+     opacity: 0;
+ }
+ 
+ .change .bar3 {
+     -webkit-transform: rotate(45deg) translate(-8px, -8px);
+     transform: rotate(45deg) translate(-8px, -8px);
+ }
+ 
+ aside {
+     background: #333333;
+     height: 0px;
+     -webkit-transition: height 1s;
+     transition: height 1s;
+ }
+ 
+ #menu-list {
+     position: fixed;
+     margin-top: 6em;
+     width: 100%;
+     z-index: 1;
+ }
+ 
+ #menu-wrapper {
+     height: 100%;
+     -webkit-transition: height 1s;
+     transition: height 1s;
+ }
+ 
+ .sidebar {
+     height: 25%;
+     text-align: left;
+     /*border-top: 2px solid #262626;*/
+     overflow: hidden;
+     cursor: pointer;
+     background-color: #333333;
+ }
+ 
+ #about {
+     transition: background-color .4s;
+ }
+ 
+ #projects {
+     transition: background-color .4s;
+ }
+ 
+ #contact {
+     transition: background-color .4s;
+ }
+ 
+ .sidebar:hover {
+     transition: background-color .5s;
+     -webkit-transition: background-color .5s;
+     background: #232323;
+ }
+ 
+ #about {
+     border-top: 2px solid #262626;
+     background-color: #232323;
+ }
+ 
+ #contact {
+     border-bottom: 2px solid #262626;
+ }
+ 
+ .banner {
+     width: 1.2em;
+     height: 190%;
+     float: right;
+     margin-right: 3em;
+     margin-top: -1em;
+     -webkit-transform: rotate(10deg);
+     -o-transform: rotate(10deg);
+     -moz-transform: rotate(10deg);
+     transition: width 1s;
+ }
+ 
+ .sidebar:hover .banner {
+     width: 3em;
+ }
+ 
+ #b1 {
+     background-color: #86DBDA;
+ }
+ 
+ #b2 {
+     background-color: #7DB4D1;
+ }
+ 
+ #b3 {
+     background-color: #828CD1;
+ }
+ 
+ #b4 {
+     background-color: #A976B8;
+ }
+ /*CONTENT*/
+ 
+ section {
+     display: block;
+     width: 100%;
+     font-family: paragraphText;
+     color: #d9d9d9;
+     padding: 0 1em;
+ }
+ 
+ .textbox {
+     padding: 0 2em;
+     width: 100%;
+ }
+ 
+ #main-content {
+     padding: 0 1em;
+     background-image: url('../images/raz1-01.png');
+     background-repeat: no-repeat;
+     background-size: contain;
+     width: 100%;
+     height: 29em;
+     margin-top: 4em;
+ }
+ 
+ footer {
+     height: 2em;
+     width: 100%;
+     background: transparent;
+ }
+ 
+ #blog {
+     background-color: rgb(255, 255, 255);
+     opacity: 0.1;
+ }
+ 
+ #blog:hover .banner {
+     width: 1.2em;
+ }
+ 
+ #blog {
+     cursor: default;
+ }
+ 
+ #blog-link {
+     cursor: default;
+ }

@@ -1,0 +1,114 @@
+/*#projects {
+    background: #232323;
+}
+
+#projects .banner {
+    width: 3em;
+}*/
+
+.port {
+    padding: 3em 0;
+}
+
+.port p {
+    display: inline-block;
+    padding: 2em 0;
+}
+
+.port i {
+    float: left;
+    padding: 2em 0 0 2em;
+}
+
+#project-portfolio {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    color: #d9d9d9;
+}
+
+.project-info {
+    padding: 0 1em;
+}
+
+.project {
+    width: inherit;
+    margin: 2em 0;
+}
+
+.project-info p {
+    padding: 1em 0;
+}
+
+ul {
+    list-style-type: none;
+    float: left;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+}
+
+.contact-info ul {
+    padding: 0 .3em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.contact {
+    padding: 1em 3em;
+}
+
+.contact-info li i {
+    padding: 0;
+    color: #7E88CB;
+}
+
+.contact-info li {
+    padding: 1em 0.2em;
+    float: left;
+    width: 50%;
+    cursor: pointer;
+}
+
+.contact-info p {
+    display: inline-block;
+    margin: 0;
+    line-height: .75em;
+}
+
+.fa-lg {
+    line-height: 0;
+}
+
+.tech li {
+    display: inline-block;
+    background: linear-gradient(to right, #006699 0%, #0099cc 100%);
+    padding: 0.5em 0.7em;
+    border-radius: 0.3em;
+    /*float: left;*/
+    margin: 0.2em 0.1em;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+#card-1 {
+    background: url('../images/novely.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#card-3 {
+    background: url('');
+}
+
+#card-4 {
+    background: url('');
+}
+
+#card-5 {
+    background: url('');
+}
