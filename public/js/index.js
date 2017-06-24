@@ -1,5 +1,5 @@
 var about = document.getElementById('main-content');
-var projects = document.getElementById('card-1');
+var projects = document.getElementById('card-2');
 var contact = document.getElementById('listItem');
 
 var skills = document.getElementById('skills');
@@ -11,7 +11,6 @@ window.onload = function() {
     if (window.innerWidth > 1669) {
         circle();
     }
-    // circle();
 }
 
 window.onscroll = function() {
@@ -32,22 +31,29 @@ function changeBanner(section) {
     var projectBanner = document.getElementById('projects');
     var contactBanner = document.getElementById('contact');
 
-    console.log(section);
-
     if (section == 'about') {
         aboutBanner.style.backgroundColor = '#232323';
         projectBanner.style.backgroundColor = '#333333';
         contactBanner.style.backgroundColor = '#333333';
+        aboutBanner.children[1].style.width = '3em';
+        projectBanner.children[1].style.width = '1.2em';
+        contactBanner.children[1].style.width = '1.2em';
     }
     if (section == 'projects') {
         aboutBanner.style.backgroundColor = '#333333';
         projectBanner.style.backgroundColor = '#232323';
         contactBanner.style.backgroundColor = '#333333';
+        aboutBanner.children[1].style.width = '1.2em';
+        projectBanner.children[1].style.width = '3em';
+        contactBanner.children[1].style.width = '1.2em';
     }
     if (section == 'contact') {
         aboutBanner.style.backgroundColor = '#333333';
         projectBanner.style.backgroundColor = '#333333';
         contactBanner.style.backgroundColor = '#232323';
+        aboutBanner.children[1].style.width = '1.2em';
+        projectBanner.children[1].style.width = '1.2em';
+        contactBanner.children[1].style.width = '3em';
     }
 
 }
