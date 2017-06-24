@@ -214,7 +214,7 @@
  .sidebar:hover {
      transition: background-color .5s;
      -webkit-transition: background-color .5s;
-     background: #232323;
+     background-color: #232323;
  }
  
  #about {

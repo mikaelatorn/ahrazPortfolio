@@ -7,11 +7,28 @@ var circles = document.getElementsByClassName("fill");
 var mask = document.getElementsByClassName('full');
 var seam = document.getElementsByClassName('seam');
 
+$(document).ready(function() {
+    $("a").on('click', function(event) {
+        if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 900, function() {
+
+                window.location.hash = hash;
+            });
+        }
+    });
+});
+
 window.onload = function() {
     if (window.innerWidth > 1669) {
         circle();
     }
-}
+
+};
 
 window.onscroll = function() {
     circle();
@@ -87,9 +104,9 @@ function checkVisible(elm) {
 // }
 
 
-circleVals = [75, 75, 75, 75, 75, 75, 60, 60, 60, 50, 50, 50, 40, 40, 40, 40, 40, 40]
-maskVals = [75, 75, 60, 50, 40, 40]
-seamVals = [75, 75, 60, 50, 40, 40]
+var circleVals = [75, 75, 75, 75, 75, 75, 60, 60, 60, 50, 50, 50, 40, 40, 40, 40, 40, 40]
+var maskVals = [75, 75, 60, 50, 40, 40]
+var seamVals = [75, 75, 60, 50, 40, 40]
 
 function addRotate(shape, vals) {
     // var deg = 135;
