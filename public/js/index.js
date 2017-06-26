@@ -23,6 +23,15 @@ $(document).ready(function() {
     });
 });
 
+window.onresize = function(event) {
+    var menu = document.getElementById('menu-list');
+    if (window.innerWidth > 899) {
+        menu.style.height = '100vh';
+    } else {
+        menu.style.height = '0px';
+    }
+};
+
 window.onload = function() {
     if (window.innerWidth > 1669) {
         circle();
@@ -94,28 +103,13 @@ function checkVisible(elm) {
 
 
 
-// var skills = {
-//     'Python': 75,
-//     'Flask': 75,
-//     'Javascript': 60,
-//     'NodeJs': 50,
-//     'C#': 40,
-//     'HTML/CSS': 40
-// }
-
-
 var circleVals = [75, 75, 75, 75, 75, 75, 60, 60, 60, 50, 50, 50, 40, 40, 40, 40, 40, 40]
 var maskVals = [75, 75, 60, 50, 40, 40]
 var seamVals = [75, 75, 60, 50, 40, 40]
 
 function addRotate(shape, vals) {
-    // var deg = 135;
-    // var degFix = 270;
-    // shape.length 
     for (var i = 0; i < shape.length; i++) {
         shape[i].className.split(" ")[0] == 'fix' ? shape[i].style.transform = " rotate(" + 360 * (vals[i] / 100) + "deg)" : shape[i].style.transform = " rotate(" + 180 * (vals[i] / 100) + "deg)";
-
-
     }
 }
 
