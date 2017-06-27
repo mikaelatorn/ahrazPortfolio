@@ -15,3 +15,7 @@
     width: 30%;
     margin: auto;
 }
+
+#contact-content h2 {
+    padding-left: 1em;
+}
