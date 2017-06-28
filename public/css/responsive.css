@@ -11,7 +11,7 @@
         padding: 1.5em 0;
     }
     .contact-info ul {
-        margin: 0 auto;
+        margin: 4em auto 0 auto;
     }
     .skill-container {
         width: 40%;
@@ -153,6 +153,9 @@
     #project-portfolio {
         padding: 0 12em 0 30em;
     }
+    .contact-info ul {
+        width: 60%;
+    }
 }
 
 @media screen and (min-width: 1360px) {
@@ -213,7 +216,10 @@
         margin: auto;
     }
     #contact-content ul {
-        width: 60%;
-        margin: auto;
+        width: 100%;
+        margin: 5em auto 0 auto;
+    }
+    .contact-info li {
+        width: 15%;
     }
 }

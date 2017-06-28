@@ -9,6 +9,7 @@
 .contact-info ul {
     list-style-type: none;
     float: none;
+    margin-top: 3em;
 }
 
 .contact-info li {
@@ -16,6 +17,6 @@
     margin: auto;
 }
 
-#contact-content h2 {
-    padding-left: 1em;
+.contact-container {
+    padding: 1em;
 }

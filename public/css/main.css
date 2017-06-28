@@ -80,6 +80,13 @@
      animation: line 2s;
  }
  
+ .contact-hr {
+     width: 40%;
+     animation: contact-line 2s;
+     float: right;
+     margin-right: 60%;
+ }
+ 
  @keyframes line {
      0% {
          width: 0%;
@@ -95,6 +102,15 @@
      }
      100% {
          width: 60%;
+     }
+ }
+ 
+ @keyframes contact-line {
+     0% {
+         width: 0%;
+     }
+     100% {
+         width: 40%;
      }
  }
  
